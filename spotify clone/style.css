@@ -1,0 +1,178 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1db954;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 15px;
+  color: white;
+  font-size: 18px;
+}
+
+nav li.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+nav li.brand img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Container and Song List */
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #1db954;
+}
+
+.songList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.songItem {
+  display: flex;
+  align-items: center;
+  background-color: #282828;
+  padding: 12px;
+  border-radius: 8px;
+  justify-content: space-between;
+  transition: background 0.3s ease;
+}
+
+.songItem:hover {
+  background-color: #333333;
+}
+
+.songItem img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.songItem span {
+  margin: 0 10px;
+  flex: 1;
+}
+
+.songDuration {
+  color: #b3b3b3;
+}
+
+.songPlay i {
+  cursor: pointer;
+  color: #1db954;
+  transition: color 0.2s ease;
+}
+
+.songPlay i:hover {
+  color: #1ed760;
+}
+
+/* Bottom Music Player */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #282828;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+
+#myProgressBar {
+  width: 80%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons i {
+  margin: 0 20px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.icons i:hover {
+  color: #1db954;
+}
+
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .songItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .songItem span {
+    margin: 5px 0;
+  }
+
+  .bottom {
+    padding: 10px;
+  }
+
+  #myProgressBar {
+    width: 100%;
+  }
+}

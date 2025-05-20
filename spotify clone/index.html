@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Your Favourite Music</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/d53bd2f5a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li class="brand">
+        <img src="logo.png" alt="Spotify Logo" />
+        Spotify
+      </li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Best of NCS - No Copyright Sounds</h1>
+    <div class="songList">
+      
+      <!-- Song Items -->
+      <div class="songItem">
+        <img src="covers/1.jpeg" alt="Desi Kalakar" />
+        <span>Desi Kalakar</span>
+        <span class="songDuration">04:13</span>
+        <span class="songPlay">
+          <i class="fa-regular fa-circle-play"></i>
+        </span>
+      </div>
+
+      <div class="songItem">
+        <img src="covers/2.jpeg" alt="Brown Rang" />
+        <span>Brown Rang</span>
+        <span class="songDuration">03:30</span>
+        <span class="songPlay">
+          <i class="fa-regular fa-circle-play"></i>
+        </span>
+      </div>
+
+      <div class="songItem">
+        <img src="covers/3.jpeg" alt="Blue Eyes" />
+        <span>Blue Eyes</span>
+        <span class="songDuration">03:40</span>
+        <span class="songPlay">
+          <i class="fa-regular fa-circle-play"></i>
+        </span>
+      </div>
+
+      <div class="songItem">
+        <img src="covers/4.jpeg" alt="Love Dose" />
+        <span>Love Dose</span>
+        <span class="songDuration">03:43</span>
+        <span class="songPlay">
+          <i class="fa-regular fa-circle-play"></i>
+        </span>
+      </div>
+
+      <div class="songItem">
+        <img src="covers/5.jpeg" alt="Makhna" />
+        <span>Makhna</span>
+        <span class="songDuration">03:11</span>
+        <span class="songPlay">
+          <i class="fa-regular fa-circle-play"></i>
+        </span>
+      </div>
+
+      <div class="songItem">
+        <img src="covers/6.jpeg" alt="Dope Shope" />
+        <span>Dope Shope</span>
+        <span class="songDuration">03:30</span>
+        <span class="songPlay">
+          <i class="fa-regular fa-circle-play"></i>
+        </span>
+      </div>
+
+      <div class="songItem">
+        <img src="covers/7.jpeg" alt="First Kiss" />
+        <span>First Kiss</span>
+        <span class="songDuration">03:38</span>
+        <span class="songPlay">
+          <i class="fa-regular fa-circle-play"></i>
+        </span>
+      </div>
+
+      <div class="songItem">
+        <img src="covers/8.jpeg" alt="Angreji Beat" />
+        <span>Angreji Beat</span>
+        <span class="songDuration">04:15</span>
+        <span class="songPlay">
+          <i class="fa-regular fa-circle-play"></i>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Music Player -->
+  <div class="bottom">
+    <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100" />
+    <div class="icons">
+      <i class="fa-solid fa-backward-fast fa-2x"></i>
+      <i class="fa-regular fa-circle-play fa-2x" id = "masterPlay"></i>
+      <i class="fa-solid fa-forward-fast fa-2x"></i>
+    </div>
+    
+  </div>
+
+
+  <!-- Script for interactivity (optional JS to be added) -->
+  <script src="script.js"></script>
+</body>
+</html>
